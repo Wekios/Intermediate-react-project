@@ -1,0 +1,55 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @frontendmasters/pet
+
+PATH: 
+  C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Veljko\Desktop\Adopt me\node_modules\.bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\Veljko\AppData\Local\Microsoft\WindowsApps;C:\Users\Veljko\AppData\Roaming\npm;C:\Users\Veljko\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Veljko\AppData\Local\Yarn\bin;C:\Users\Veljko\.dotnet\tools
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Veljko\Desktop\Adopt me\node_modules\deasync\bin\win32-x64-node-10\deasync.node'
+
+npm manifest: 
+  {
+      "name": "adopt-me",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+          "dev": "parcel src/index.html",
+          "format": "prettier \"src/**/*.{js,html}\" --write",
+          "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+          "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": "Wekios",
+      "license": "ISC",
+      "devDependencies": {
+          "babel-eslint": "^10.0.3",
+          "eslint": "^6.4.0",
+          "eslint-config-prettier": "^6.3.0",
+          "eslint-plugin-import": "^2.18.2",
+          "eslint-plugin-jsx-a11y": "^6.2.3",
+          "eslint-plugin-react": "^7.14.3",
+          "eslint-plugin-react-hooks": "^2.0.1",
+          "parcel-bundler": "^1.12.3",
+          "prettier": "^1.18.2"
+      },
+      "dependencies": {
+          "i": "^0.3.6",
+          "react": "^16.9.0",
+          "react-dom": "^16.9.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

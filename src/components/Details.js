@@ -1,8 +1,12 @@
 import React from 'react';
 
-const Details = () => {
+const Details = props => {
     return (
-        <h1>hi lol</h1>
+        <pre>
+            <code>
+                {JSON.stringify(props, null, 4)}
+            </code>
+        </pre>
     )
 }
 

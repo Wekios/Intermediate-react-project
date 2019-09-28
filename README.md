@@ -2,11 +2,7 @@
 
 [See the course website here][v5].
 
-Before starting the course, please have [VSCode][vscode] or another code editor installed.
-
-The master branch and commits within are all covered in [Introduction to React v5][course]. The other branches, excluding the [gh-pages-src][gh-pages] and gh-pages branches (these create the [course website][v5]), are all covered in [Intermediate React][course-intermediate] as modular segments that can be taken individually, or out of order.
-
-Brian is using a font called [Dankmono][dankmono] (not necessary to install -- just for those curious), but [FiraCode][firacode] is another great option. This course was written for and recorded by [Frontend Masters][fem]. The code here is licensed under the Apache 2.0 license and the [course notes][v5] are licensed under the Creative Commons Attribution-NonCommercial 4.0 International license.
+Project from this course and some usefull code I'm saving.
 
 ## Debugging
 

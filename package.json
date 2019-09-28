@@ -1,8 +1,8 @@
 {
-    "name": "adopt-me",
+    "name": "complete-intro-to-react-v5",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "the Complete Intro to React, v5",
+    "main": "src/App.js",
     "dependencies": {
         "@frontendmasters/pet": "^1.0.3",
         "@reach/router": "^1.2.1",
@@ -10,11 +10,11 @@
         "react-dom": "^16.8.4"
     },
     "devDependencies": {
-        "@babel/core": "^7.6.2",
-        "@babel/plugin-proposal-class-properties": "^7.5.5",
-        "@babel/preset-env": "^7.6.2",
+        "@babel/core": "^7.4.3",
+        "@babel/plugin-proposal-class-properties": "^7.4.0",
+        "@babel/preset-env": "^7.4.3",
         "@babel/preset-react": "^7.0.0",
-        "babel-eslint": "^10.0.3",
+        "babel-eslint": "^10.0.1",
         "cross-env": "^5.2.0",
         "eslint": "^5.12.1",
         "eslint-config-prettier": "^4.0.0",

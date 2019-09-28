@@ -5,6 +5,10 @@ import Carousel from "./Carousel";
 import Modal from "./Modal";
 import ErrorBoundary from "./ErrorBoundary";
 import ThemeContext from "./ThemeContext";
+import _ from "lodash";
+import moment from "moment";
+
+console.log(_, moment);
 
 class Details extends React.Component {
     state = { loading: true, showModal: false };
@@ -16,7 +20,7 @@ class Details extends React.Component {
                     animal: animal.type,
                     location: `${animal.contact.address.city}, ${
                         animal.contact.address.state
-                    }`,
+                        }`,
                     description: animal.description,
                     media: animal.photos,
                     breed: animal.breeds.primary,

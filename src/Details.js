@@ -1,10 +1,10 @@
 import React from "react";
 import pet from "@frontendmasters/pet";
 import { navigate } from "@reach/router";
+import { connect } from 'react-redux';
 import Carousel from "./Carousel";
 import Modal from "./Modal";
 import ErrorBoundary from "./ErrorBoundary";
-import ThemeContext from "./ThemeContext";
 
 class Details extends React.Component {
     state = { loading: true, showModal: false };
@@ -16,7 +16,7 @@ class Details extends React.Component {
                     animal: animal.type,
                     location: `${animal.contact.address.city}, ${
                         animal.contact.address.state
-                    }`,
+                        }`,
                     description: animal.description,
                     media: animal.photos,
                     breed: animal.breeds.primary,
@@ -49,16 +49,12 @@ class Details extends React.Component {
                 <div>
                     <h1>{name}</h1>
                     <h2>{`${animal} — ${breed} — ${location}`}</h2>
-                    <ThemeContext.Consumer>
-                        {([theme]) => (
-                            <button
-                                style={{ backgroundColor: theme }}
-                                onClick={this.toggleModal}
-                            >
-                                Adopt {name}
-                            </button>
-                        )}
-                    </ThemeContext.Consumer>
+                    <button
+                        style={{ backgroundColor: this.props.theme }}
+                        onClick={this.toggleModal}
+                    >
+                        Adopt {name}
+                    </button>
                     <p>{description}</p>
                     {showModal ? (
                         <Modal>
@@ -75,10 +71,14 @@ class Details extends React.Component {
     }
 }
 
+const mapStateToProps = ({ theme }) => ({ theme });
+
+const WrappedDetails = connect(mapStateToProps)(Details);
+
 export default function DetailsErrorBoundary(props) {
     return (
         <ErrorBoundary>
-            <Details {...props} />
+            <WrappedDetails {...props} />
         </ErrorBoundary>
     );
 }
